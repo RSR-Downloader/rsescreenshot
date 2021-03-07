@@ -286,7 +286,7 @@ async def cb_(client, callback_query, retry = False):
                 await asyncio.sleep(4)
                 await cb_(client, callback_query, retry=True)
             elif retry:
-                await msg.edit("<b>Soory the site is not responding</b>")
+                await msg.edit("<b>Sorry the site is not responding</b>")
                 return False
         except Exception as e:
             await msg.reply_to_message.reply_text(
